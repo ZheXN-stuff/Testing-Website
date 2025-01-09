@@ -2,66 +2,73 @@
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
-    background-color: #f0f8ff; /* Light blue background */
+    background-color: #2c3e50; /* Dark blue background */
     margin: 0;
     padding: 0;
+    color: #ecf0f1; /* Light text color for contrast */
 }
 
 /* Header */
 h2 {
-    margin-top: 20px;
-    color: #2c3e50; /* Darker blue */
-    font-size: 2.5em;
+    margin-top: 30px;
+    color: #ecf0f1; /* Light text for header */
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 /* Clock Styles */
 #clock {
-    font-size: 2em;
-    margin: 20px;
-    color: #34495e; /* Subtle dark grey-blue */
+    font-size: 3em;
+    margin: 30px;
+    color: #f39c12; /* Yellow-orange for clock */
     font-weight: bold;
-    text-shadow: 1px 1px 3px #ccc;
+    text-shadow: 1px 1px 4px #7f8c8d; /* Soft shadow effect */
 }
 
 /* Table Styles */
 table {
     margin: auto;
-    width: 70%;
+    width: 80%;
     border-collapse: collapse;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    background: #fff;
-    border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    background: #34495e; /* Darker blue table background */
+    border-radius: 15px; /* Rounded corners */
     overflow: hidden;
+    padding: 20px;
 }
 
 /* Table Headers */
 th {
-    background-color: #3498db; /* Blue header */
-    color: white;
+    background-color: #1abc9c; /* Bright teal header */
+    color: #fff;
     font-size: 1.2em;
-    padding: 15px;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* Table Cells */
 td {
-    padding: 10px 15px;
-    font-size: 1em;
-    color: #555; /* Dark gray text */
-    border-bottom: 1px solid #ddd;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    color: #ecf0f1; /* Light text color */
+    border-bottom: 1px solid #95a5a6; /* Subtle border */
 }
 
 /* Zebra Striping */
 tbody tr:nth-child(odd) {
-    background-color: #f9f9f9;
+    background-color: #2c3e50; /* Same dark blue for odd rows */
 }
 
 tbody tr:nth-child(even) {
-    background-color: #fefefe;
+    background-color: #34495e; /* Slightly lighter blue for even rows */
 }
 
 /* Hover Effect */
 tbody tr:hover {
-    background-color: #eaf6fd;
+    background-color: #16a085; /* Teal on hover */
+    cursor: pointer;
 }
 
 /* Responsive Design */
@@ -70,9 +77,9 @@ tbody tr:hover {
         width: 90%;
     }
     th, td {
-        font-size: 0.9em;
+        font-size: 1em;
     }
     #clock {
-        font-size: 1.5em;
+        font-size: 2.5em;
     }
 }
