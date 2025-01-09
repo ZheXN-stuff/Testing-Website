@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prayer Times</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #eef;
+        }
+        #clock {
+            font-size: 2em;
+            margin: 20px;
+            color: #333;
+        }
+        table {
+            margin: auto;
+            width: 60%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h2>Prayer Times</h2>
+    <div id="clock">Loading time...</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Prayer</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fajr</td>
+                <td>5:00 AM</td>
+            </tr>
+            <tr>
+                <td>Dhuhr</td>
+                <td>12:30 PM</td>
+            </tr>
+            <tr>
+                <td>Asr</td>
+                <td>4:15 PM</td>
+            </tr>
+            <tr>
+                <td>Maghrib</td>
+                <td>6:00 PM</td>
+            </tr>
+            <tr>
+                <td>Isha</td>
+                <td>7:30 PM</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const time = now.toLocaleTimeString();
+            document.getElementById('clock').textContent = time;
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+</html>
